@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop the Collection | Pink Doll Society</title>
+  <meta name="description" content="Shop luxury hair extensions at Pink Doll Society.">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/products.css">
+  <script src="js/products.js" defer></script>
+</head>
+<body class="shop-page">
+
+  <header class="shop-header">
+    <a class="shop-logo" href="index.html">
+      PINK DOLL <span>SOCIETY</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">HOME</a>
+      <a href="products.html" aria-current="page">SHOP ALL</a>
+      <a href="cart.html" class="shop-bag">
+        MY BAG (<span id="cart-count">0</span>)
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="shop-hero">
+      <p class="shop-eyebrow">THE HAIR COLLECTION</p>
+      <h1>Shop the <span>Society.</span></h1>
+      <p>Your hair. Your rules. Your signature look.</p>
+    </section>
+
+    <section class="collection-section">
+      <div class="collection-heading">
+        <div>
+          <p class="shop-eyebrow">MADE FOR THE DOLLS</p>
+          <h2>Find Your Signature</h2>
+        </div>
+        <p id="product-total">3 styles to explore</p>
+      </div>
+
+      <div class="product-grid" id="product-grid">
+        <p class="loading-message">Preparing your collection...</p>
+      </div>
+
+      <p class="price-notice">
+        Sample prices shown for development. Final prices and available
+        lengths will be confirmed before launch.
+      </p>
+    </section>
+  </main>
+
+  <footer class="shop-footer">
+    <a class="shop-logo" href="index.html">
+      PINK DOLL <span>SOCIETY</span>
+    </a>
+    <p>Made for the dolls who set the standard.</p>
+    <p>© <span id="footer-year"></span> Pink Doll Society</p>
+  </footer>
+
+  <div class="cart-toast" id="cart-toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>

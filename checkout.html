@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Pink Doll Society</title>
+  <link rel="stylesheet" href="css/checkout.css">
+  <script src="js/checkout.js" defer></script>
+</head>
+<body class="checkout-page">
+
+  <div class="checkout-ribbon">
+    PINK DOLL SOCIETY · YOUR NEXT HAIR OBSESSION STARTS HERE
+  </div>
+
+  <header class="checkout-header">
+    <a href="index.html" class="brand">PINK DOLL <span>SOCIETY</span></a>
+    <a href="cart.html" class="back-link">← BACK TO MY BAG</a>
+  </header>
+
+  <main class="checkout-container">
+    <section class="checkout-heading">
+      <p class="eyebrow">THE FINAL TOUCH</p>
+      <h1>Make It <span>Official.</span></h1>
+      <p>Your dream hair is almost yours, doll.</p>
+    </section>
+
+    <div class="checkout-grid">
+      <section class="checkout-form-panel">
+        <form id="checkout-form">
+
+          <div class="form-section">
+            <span class="section-number">01</span>
+            <div>
+              <h2>Who's the doll?</h2>
+              <p>Enter the contact details for your order.</p>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              First name
+              <input type="text" name="firstName" autocomplete="given-name" required>
+            </label>
+
+            <label>
+              Last name
+              <input type="text" name="lastName" autocomplete="family-name" required>
+            </label>
+
+            <label class="full-width">
+              Email address
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+
+            <label class="full-width">
+              Phone number
+              <input type="tel" name="phone" autocomplete="tel" required>
+            </label>
+          </div>
+
+          <div class="form-section shipping-heading">
+            <span class="section-number">02</span>
+            <div>
+              <h2>Where's she going?</h2>
+              <p>Enter the shipping destination.</p>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <label class="full-width">
+              Street address
+              <input type="text" name="address" autocomplete="address-line1" required>
+            </label>
+
+            <label class="full-width">
+              Apartment, suite, etc. <span class="optional">(optional)</span>
+              <input type="text" name="address2" autocomplete="address-line2">
+            </label>
+
+            <label>
+              City
+              <input type="text" name="city" autocomplete="address-level2" required>
+            </label>
+
+            <label>
+              State / Territory
+              <input type="text" name="region" autocomplete="address-level1" required>
+            </label>
+
+            <label>
+              ZIP / Postal code
+              <input type="text" name="postalCode" autocomplete="postal-code" required>
+            </label>
+
+            <label>
+              Country
+              <select name="country" autocomplete="country-name" required>
+                <option value="">Select country</option>
+                <option value="US">United States</option>
+                <option value="VI">U.S. Virgin Islands</option>
+                <option value="PR">Puerto Rico</option>
+                <option value="CA">Canada</option>
+                <option value="GB">United Kingdom</option>
+                <option value="OTHER">Other</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-section shipping-heading">
+            <span class="section-number">03</span>
+            <div>
+              <h2>One last thing</h2>
+              <p>Any special instructions for your order?</p>
+            </div>
+          </div>
+
+          <label class="full-width notes-label">
+            Order notes <span class="optional">(optional)</span>
+            <textarea name="notes" rows="3" placeholder="Delivery instructions or other details..."></textarea>
+          </label>
+
+          <p class="checkout-notice">
+            Payment processing is not connected yet. Your information will not be submitted
+            to a store or payment provider from this demo checkout.
+          </p>
+
+          <button type="submit" id="place-order-button">
+            CONTINUE TO SECURE PAYMENT <span>↗</span>
+          </button>
+
+          <p id="checkout-message" class="checkout-message" role="status"></p>
+
+          <p class="secure-note">♡ MADE FOR DOLLS WHO KNOW THEIR WORTH</p>
+        </form>
+      </section>
+
+      <aside class="order-panel">
+        <div class="order-panel-heading">
+          <p class="eyebrow">YOUR SELECTION</p>
+          <h2>The Doll Edit</h2>
+          <span id="summary-count">0 items</span>
+        </div>
+
+        <div id="checkout-items" class="checkout-items"></div>
+
+        <div id="checkout-empty" class="checkout-empty" hidden>
+          Your bag is empty.
+          <a href="products.html">Shop the collection →</a>
+        </div>
+
+        <div class="order-totals">
+          <div><span>Subtotal</span><strong id="checkout-subtotal">$0.00</strong></div>
+          <div><span>Shipping</span><span id="shipping-cost">Calculated at payment</span></div>
+          <div><span>Taxes</span><span>Calculated at payment</span></div>
+          <div class="total-line"><span>Estimated total</span><strong id="checkout-total">$0.00</strong></div>
+        </div>
+
+        <a href="cart.html" class="edit-bag">EDIT MY BAG</a>
+        <div class="pink-note">GOOD HAIR. MAIN CHARACTER ENERGY.</div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="checkout-footer">
+    <a href="index.html">PINK DOLL SOCIETY</a>
+    <span>THE SOCIETY LOOKS GOOD ON YOU.</span>
+  </footer>
+
+</body>
+</html>
